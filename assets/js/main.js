@@ -55,10 +55,9 @@ animate(chars2, {
 function runFadeOverlay() {
   const overlay = document.querySelector('.page-fade-overlay');
   overlay.classList.remove('hide');
-  setTimeout(() => overlay.classList.add('hide'), 1000); // ১ সেকেন্ড ফেইড-আউট
-}
+  setTimeout(() => overlay.classList.add('hide'), 1000); 
 
 window.addEventListener('DOMContentLoaded', () => {
   runFadeOverlay();
-  setInterval(runFadeOverlay, 5000); // প্রতি ১০ সেকেন্ডে আবার চালাও
+  setInterval(runFadeOverlay, 5000);
 });
